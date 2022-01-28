@@ -118,8 +118,20 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain what a token is used for.
 
+    A Token is a value for authentication that allows internet users to access secure information or services. It is a unique access key that is generated to verify the user's identity and provides access to protected pages or data for a period of time while they still obtain the authentication token.
+
 2. What steps can you take in your web apps to keep your data secure?
+
+    There are many ways to keep your data secure in a web app. You can apply authentication through tokens that require a key to view and access protected pages on the site. Timeout features with authortization tokens that way the site requires the user to log back in after a set amout of time. There are many other ways such as requiring strong passwords and other encryptions.
 
 3. Describe how web servers work.
 
+    A web server is first connected to the internet. The server stores code and loads the code for websites, web apps and programs thus making it a web server. The web server then loads web pages and web apps from the retrieved code when the user requests pages or apps to be viewed. The web server is a computer that holds the code for the website and also the program that runs the code on the computer.
+
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+    There are 4 parts to the CRUD acronym, Create, Read, Update, and Delete, that have corresponding HTTP methods. 
+    The HTTP method that goes with Create is the POST.
+    The HTTP method that goes with Read is the GET.
+    The HTTP method that goes with Update is the PUT.
+    The HTTP method that goes with Delete is the DELETE.

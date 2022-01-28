@@ -1,10 +1,14 @@
 import React from 'react';
-import { Route } from "react-router-dom";
+import { BrowserRouter as Route, Switch } from "react-router-dom";
 import styled from 'styled-components';
 
 import Header from './Header';
 import BloomHeader from './BloomHeader';
 import Login from './Login';
+import PrivateRoute from './PrivateRoute';
+import View from "./View"
+import Logout from './Logout';
+
 
 const App = () => {
   return (
@@ -12,9 +16,14 @@ const App = () => {
       <BloomHeader/>
       <Header/>
       <RouteContainer>
-        <Route exact path="/">
-          <Login/>
-        </Route>          
+
+        <Switch>
+          <PrivateRoute path="/logout"component={Logout}/>  
+          <PrivateRoute path="/view"component={View}/>
+          <Login path="/login" component={Login}/>
+          <Login path="/" component={Login}/>
+        </Switch>
+
       </RouteContainer>
     </AppContainer>
   )
